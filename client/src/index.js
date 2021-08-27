@@ -1,3 +1,4 @@
+// jshint ignore:start
 import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
