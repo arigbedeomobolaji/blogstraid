@@ -81,7 +81,7 @@ describe("When not logged in", () => {
 		},
 	];
 
-	test.only("should handle blog creation and read operatons", async () => {
+	test("should handle blog creation and read operatons", async () => {
 		const results = await page.execRequest(actions);
 		for (let result of results) {
 			expect(result).toEqual({ error: "You must log in!" });

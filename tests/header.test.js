@@ -12,11 +12,6 @@ afterEach(async () => {
 	await page.close();
 });
 
-test("jest is working properly", () => {
-	const result = 2 + 3;
-	expect(result).toBe(5);
-});
-
 test("check that page title is correct", async () => {
 	const title = await page.getContentsOf("a.left.brand-logo");
 	expect(title).toEqual("Blogster");
